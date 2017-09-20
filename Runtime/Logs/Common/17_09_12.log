@@ -1,0 +1,72 @@
+[ 2017-09-12T10:13:38+08:00 ] 127.0.0.1 /Public/bootstrapvalidator/bootstrapValidator.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:13:38+08:00 ] 127.0.0.1 /Public/bootstrapvalidator/bootstrapValidator.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:13:39+08:00 ] 127.0.0.1 /Public/bootstrapvalidator/bootstrapValidator.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:13:39+08:00 ] 127.0.0.1 /Public/bootstrapvalidator/language/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:21:11+08:00 ] 127.0.0.1 /Public/static/bootstrapvalidator/bootstrapValidator.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:21:11+08:00 ] 127.0.0.1 /Public/static/bootstrapvalidator/bootstrapValidator.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:21:12+08:00 ] 127.0.0.1 /Public/static/bootstrapvalidator/bootstrapValidator.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:21:12+08:00 ] 127.0.0.1 /Public/static/bootstrapvalidator/language/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:23:22+08:00 ] 127.0.0.1 /Public/statics/bootstrapvalidator/language/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T10:23:23+08:00 ] 127.0.0.1 /Public/statics/bootstrapvalidator/language/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-12T11:39:41+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-12T16:32:10+08:00 ] 127.0.0.1 /Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Index
+

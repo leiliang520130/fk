@@ -1,0 +1,62 @@
+<extend name="Public:base"/>
+<block name="css">
+    <style>
+        .row h4{
+            height: 200px;
+            width: 294px;
+            text-align: center;
+            display: table-cell;
+            vertical-align:middle;
+
+        }
+
+    </style>
+</block>
+<block name="content">
+    <h3 style="text-align: center;margin-top: 10px">卖给玩家记录</h3>
+    <div class="row">
+        <form style="margin-bottom: 20px;margin-top: 20px" class="form-inline" method="get" action="__SELF__" id="">
+            <div class="form-group">
+                <label for="txtStartDate1">开始时间</label>
+                <input id="txtStartDate1" style="height: 34px;width: 100%" class="" type="date" placeholder="请输入开始时间" value="{:I('start1', '')}" name="start1"/>
+            </div>
+            <div class="form-group">
+                <label for="txtEndDate1">结束时间</label>
+                <input id="txtEndDate1" style="height: 34px;width: 100%" class="" type="date" placeholder="请输入结束时间" name="end1" value="{:I('end1', '')}"/>
+            </div>
+            <button type="submit" style="width: 100%" class="btn btn-info  btn-sm">查询</button>
+        </form>
+        <table class="table table-striped">
+            <tr>
+                <td>玩家ID</td>
+                <td>购卡数量</td>
+                <td>购卡时间</td>
+                <td>交易状态</td>
+            </tr>
+            <foreach name="data" item="vo">
+                <tr>
+                    <td>{$vo.pcode}</td>
+                    <td>{$vo.num}</td>
+                    <td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+                    <td>
+                        <eq name="vo.type" value="3">
+                            <span>充值中...</span>
+                            <else/>
+                            <span>充值成功</span>
+                        </eq>
+                    </td>
+                </tr>
+            </foreach>
+        </table>
+        {$page}
+    </div>
+
+</block>
+<block name="row">
+    <div class="row">
+        <a href="{:U('Home/User/index')}" class="btn btn-primary col-xs-12 my-btn btn-lg" type="submit">返回首页</a>
+    </div>
+</block>
+<block name="js">
+</block>
+

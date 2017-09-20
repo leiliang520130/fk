@@ -1,0 +1,107 @@
+<extend name="Public:base"/>
+<block name="title">代理申请审核</block>
+<block name="content">
+    <div class="page-header"><h1><i class="fa fa-home"></i>代理申请审核</h1></div>
+        <!--收索部分开始-->
+
+        <form class="form-inline" method="get" action="__SELF__" id="com_from">
+            <div class="form-group">
+                <label for="exampleInputName2">手机号码</label>
+                <input type="text" class="form-control" id="exampleInputName2" name="phone" value="{:I('phone', '')}" placeholder="请输入手机号码">
+            </div>
+            <div class="form-group">
+                <label>姓名</label>
+                <input type="email" class="form-control"  name="name" value="{:I('username', '')}" placeholder="输入查找姓名">
+            </div>
+            <div class="form-group">
+                <label>审核状态</label>
+                <select name="status" class="form-control" id="status">
+                    <option value="">未选择</option>
+                    <option value="2">审核中</option>
+                    <option value="1">已通过</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-info btn-sm" style="margin-top: 19px">搜索</button>
+        </form>
+        <!--收索结束-->
+
+        <table class="table table-bordered">
+            <tr class="active">
+                <td>序号</td>
+                <td>手机号码</td>
+                <td>姓名</td>
+                <td>代理理级别</td>
+                <td>上级代理ID(姓名)</td>
+                <td>申请时间</td>
+                <td>审核状态</td>
+                <td>操作</td>
+
+            </tr>
+
+            <foreach name='data' item='vo'>
+                <tr class="odd gradeX">
+                    <td>{$vo.id}</td>
+                    <td>{$vo.phone}</td>
+                    <td>{$vo.username}</td>
+                    <td>{$vo.level}级代理</td>
+                    <td>{$vo.pid} ({$vo.uname})</td>
+                    <td>{:date('Y-m-d H:i', $vo['register_time'])}</td>
+                    <td>
+                        <eq name="vo.status" value="2">
+                            <button class='btn btn-sm btn-info' onclick="audit(1,'{$vo.id}')" >点击审核</button>
+                            <else/>
+                            <span>审核通过</span>
+                        </eq>
+                    </td>
+                    <td>
+                        <eq name="vo.status" value="1">
+                            <button class='btn btn-danger btn-sm' onclick="audit(2,'{$vo.id}')" >取消代理</button>
+                        </eq>
+                    </td>
+                </tr>
+            </foreach>
+        </table>
+        {$page}
+    </div>
+</block>
+<block name="js">
+    <script>
+
+
+
+        //回显示select
+        $(function () {
+
+            var status = "{:I('get.status')}";
+            if(status != null || status != ''){
+                $('#status').val([status]);
+            }
+        });
+
+        function audit(type,id) {
+            if(type == 1) {
+                var msg = '您确定要审核通过吗?';
+            }else{
+                var msg = '您确定要取消代理吗,用户将无法登陆!';
+            }
+            layer.confirm(msg, {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                $.post("{:U('Manage/audit')}",{id:id,type:type},function(r){
+                    if(r.code == 0) {
+                        layer.msg('操作成功',{icon:1,time:1000});
+                        setTimeout(function () {
+                            window.location.reload(true);
+                        }, 1000);
+                    }else{
+                        layer.msg('操作失败，请重试',{icon:2,time:1000});
+                    }
+                },'json')
+            }, function(){
+            });
+        }
+
+
+    </script>
+
+</block>

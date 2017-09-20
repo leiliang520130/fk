@@ -1,0 +1,93 @@
+<extend name="Public:base"/>
+<block name="title">房卡管理</block>
+<block name="content">
+    <div class="page-header"><h1><i class="fa fa-home"></i>房卡卖出记录</h1></div>
+    <div class="col-xs-12">
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="panel panel-default">
+                        <p class="panel-heading">房卡卖给代理</p>
+                        <!--搜索页面-->
+
+                        <form style="margin-bottom: 20px;margin-top: 20px" class="form-inline" method="get" action="__SELF__" id="">
+                            <div class="form-group">
+                                <label for="txtStartDate">开始时间</label>
+                                <input id="txtStartDate" style="height: 34px" class="Wdate" type="text" onFocus="WdatePicker(WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd'}))" placeholder="请输入开始时间" value="{:I('start', '')}" name="start"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEndDate">结束时间</label>
+                                <input id="txtEndDate" style="height: 34px" class="Wdate" type="text" onFocus="WdatePicker(WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd'}))" placeholder="请输入结束时间" name="end" value="{:I('end', '')}"/>
+                            </div>
+                            <button type="submit" style="width: 80px" class="btn btn-info  btn-sm">查询</button>
+                        </form>
+                        <table class="table table-striped">
+                            <tr>
+                                <td>卖出ID</td>
+                                <td>购卡数量</td>
+                                <td>购卡时间</td>
+                            </tr>
+                            <foreach name="data.data" item="vo">
+                                <tr>
+                                    <td>{$vo.pcode}</td>
+                                    <td>{$vo.num}</td>
+                                    <td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+                                </tr>
+                            </foreach>
+                        </table>
+                    </div>
+                    {$data['page']}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="panel panel-default">
+                        <p class="panel-heading">房卡卖给玩家</p>
+                        <!--搜索页面-->
+                        <form style="margin-bottom: 20px;margin-top: 20px" class="form-inline" method="get" action="__SELF__" id="">
+                            <div class="form-group">
+                                <label for="txtStartDate1">开始时间</label>
+                                <input id="txtStartDate1" style="height: 34px" class="Wdate" type="text" onFocus="WdatePicker(WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd'}))" placeholder="请输入开始时间" value="{:I('start1', '')}" name="start1"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEndDate1">结束时间</label>
+                                <input id="txtEndDate1" style="height: 34px" class="Wdate" type="text" onFocus="WdatePicker(WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd'}))" placeholder="请输入结束时间" name="end1" value="{:I('end1', '')}"/>
+                            </div>
+                            <button type="submit" style="width: 80px" class="btn btn-info  btn-sm">查询</button>
+                        </form>
+                        <table class="table table-striped">
+                            <tr>
+                                <td>玩家ID</td>
+                                <td>购卡数量</td>
+                                <td>购卡时间</td>
+                                <td>交易状态</td>
+                            </tr>
+                            <foreach name="data_play.data" item="vo">
+                                <tr>
+                                    <td>{$vo.pcode}</td>
+                                    <td>{$vo.num}</td>
+                                    <td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+                                    <td>
+                                        <eq name="vo.type" value="3">
+                                            <span>充值中...</span>
+                                            <else/>
+                                            <span>充值成功</span>
+                                        </eq>
+                                    </td>
+                                </tr>
+                            </foreach>
+                        </table>
+                    </div>
+                    {$data_play['page']}
+                </div>
+            </div>
+
+        </section>
+    </div>
+</block>
+<block name="js">
+    <script src="__PUBLIC__/statics/My97DatePicker/WdatePicker.js"></script>
+
+
+</block>

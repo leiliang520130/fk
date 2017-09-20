@@ -1,0 +1,288 @@
+[ 2017-09-19T09:10:51+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T09:37:42+08:00 ] 192.168.6.181 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T09:37:45+08:00 ] 192.168.6.181 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001281s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T09:37:57+08:00 ] 192.168.6.181 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T09:37:59+08:00 ] 192.168.6.181 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T09:38:01+08:00 ] 192.168.6.181 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T09:38:08+08:00 ] 192.168.6.181 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T11:22:07+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T11:22:07+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:07+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:07+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:07+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:09+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T11:22:09+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:09+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:09+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:09+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:11+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T11:22:11+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:11+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:11+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:22:11+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:34:49+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T11:34:49+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:34:49+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:34:49+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:34:49+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:01+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:01+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:01+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:01+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:13+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T11:35:13+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:13+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:13+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T11:35:13+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:45+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T12:20:45+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:45+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:45+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:45+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:57+08:00 ] 192.168.6.1 /webnoauth/model.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Webnoauth
+
+[ 2017-09-19T12:20:57+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:57+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:57+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:20:57+08:00 ] 192.168.6.1 /router/get_rand_key.cgi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Router
+
+[ 2017-09-19T12:32:47+08:00 ] 192.168.6.158 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-19T12:32:47+08:00 ] 192.168.6.158 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+ERR: 无法加载模块:Favicon
+

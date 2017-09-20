@@ -1,0 +1,114 @@
+<extend name="Public:base"/>
+<block name="css">
+    <style>
+        .input-group{
+            margin-bottom: 20px;
+        }
+    </style>
+</block>
+<block name="content">
+    <h3 style="text-align: center;margin-top: 10px;color: #e38d13;">卖卡给玩家 </h3>
+    <div class="row">
+        <!--<button class="btn btn-default col-xs-12 my-btn" type="submit">可售的房卡数量:{$user.num}</button>
+        <button class="btn btn-default col-xs-12 my-btn" type="submit">玩家游戏ID:<input type="number"   name="pid" placeholder="输入玩家游戏ID"/></button>
+        <button class="btn btn-default col-xs-12 my-btn" type="submit">卖出卡数量:<input type="number" name="num" placeholder="输入卖给代理的房卡数量"/></button>
+        <button class="btn btn-default col-xs-12 my-btn" type="submit">备注:<textarea class="form-control" id="remark" name="remark" rows="2"></textarea></button>
+        <button class="btn btn-success col-xs-12 my-btn" type="submit" id="sub">确定卖卡</button>-->
+        <form class="form-inline">
+            <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" style="width: 112px" type="button">可售房卡数量:</button>
+                    </span>
+                <input type="text" value="{$user.num}"  class="form-control" readonly>
+            </div>
+            <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" style="width: 112px" type="button">玩家游戏 ID:</button>
+                    </span>
+                <input type="number" name="pid" placeholder="输入玩家游戏ID"  class="form-control">
+            </div>
+            <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">&nbsp;&nbsp;&nbsp;卖出卡数量:</button>
+                    </span>
+                <input type="number" name="num" placeholder="输入玩家的房卡数量"  class="form-control">
+            </div>
+            <div class="input-group bz">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" style="height: 54px;width: 112px" type="button">备注:</button>
+                    </span>
+                <textarea placeholder="这里可输入备注信息!" class="form-control" id="remark" name="remark" rows="2"></textarea>
+            </div>
+        </form>
+        <button class="btn btn-warning col-xs-12 my-btn btn-lg" type="submit" id="sub">确定卖卡</button>
+    </div>
+</block>
+<block name="row">
+    <div class="row">
+        <a href="{:U('Home/User/index')}" class="btn btn-primary col-xs-12 my-btn btn-lg" type="submit">返回首页</a>
+    </div>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            $("#sub").on('click', function () {
+                var pid = $('input[name=pid]').val();
+                var num = $('input[name=num]').val();
+                var remark = $('#remark').val();
+                if (pid == '') {
+                    layer.open({
+                        content: '请输入玩家ID'
+                        ,skin: 'msg'
+                        ,time: 2
+                    });
+                    return false;
+                }
+                if (num == '') {
+                    layer.open({
+                        content: '请输入房卡数量'
+                        ,skin: 'msg'
+                        ,time: 2
+                    });
+                    return false;
+                }
+                var r = /^[0-9]*[1-9][0-9]*$/;
+                if (!r.test(num)) {
+                    layer.open({
+                        content: '数量必须为正整数'
+                        ,skin: 'msg'
+                        ,time: 2
+                    });
+                    return false;
+                }
+
+                layer.open({
+                    content: '请确认信息是否正确,误充值房卡不可退回？'
+                    ,btn: ['确定', '取消']
+                    ,yes: function(index){
+                        $.post("{:U('Admin/Card/play_buy')}", {pid: pid, num: num, remark: remark}, function (r) {
+                            if (r.code == 0) {
+                                layer.open({
+                                    content: '操作成功'
+                                    ,skin: 'msg'
+                                    ,time: 2
+                                });
+                                setTimeout(function () {
+                                    window.location.href = "{:U('Home/User/index')}";
+                                }, 1000);
+                            } else {
+                                layer.open({
+                                    content: r.msg
+                                    ,skin: 'msg'
+                                    ,time: 2
+                                });
+                            }
+                        }, 'json')
+                        layer.close(index);
+                    }
+                });
+
+            });
+        });
+
+    </script>
+</block>

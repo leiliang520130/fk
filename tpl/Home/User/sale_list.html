@@ -1,0 +1,55 @@
+<extend name="Public:base"/>
+<block name="css">
+    <style>
+        .row h4{
+            height: 200px;
+            width: 294px;
+            text-align: center;
+            display: table-cell;
+            vertical-align:middle;
+
+        }
+
+    </style>
+</block>
+<block name="content">
+    <h3 style="text-align: center;margin-top: 10px">卖给代理记录</h3>
+    <div class="row">
+        <form style="margin-bottom: 20px;margin-top: 20px" class="form-inline" method="get" action="__SELF__" id="">
+            <div class="form-group">
+                <label for="txtStartDate">开始时间</label>
+                <input id="txtStartDate" style="height: 34px;width: 100%;-webkit-appearance:none;" class="" type="date" placeholder="请输入开始时间" value="{:I('start', '')}" name="start"/>
+            </div>
+            <div class="form-group">
+                <label for="txtEndDate">结束时间</label>
+                <input id="txtEndDate" style="height: 34px;width: 100%;-webkit-appearance:none;" class="" type="date"  placeholder="请输入结束时间" name="end" value="{:I('end', '')}"/>
+            </div>
+            <button type="submit" style="width: 100%" class="btn btn-info  btn-sm">查询</button>
+        </form>
+        <table class="table table-striped">
+            <tr>
+                <td>卖出ID</td>
+                <td>购卡数量</td>
+                <td>购卡时间</td>
+            </tr>
+            <foreach name="data" item="vo">
+                <tr>
+                    <td>{$vo.pcode}</td>
+                    <td>{$vo.num}</td>
+                    <td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+                </tr>
+            </foreach>
+        </table>
+        {$page}
+    </div>
+
+</block>
+<block name="row">
+    <div class="row">
+        <a href="{:U('Home/User/index')}" class="btn btn-primary col-xs-12 my-btn btn-lg" type="submit">返回首页</a>
+    </div>
+</block>
+<block name="js">
+
+</block>
+
